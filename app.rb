@@ -7,6 +7,7 @@ class Birthday < Sinatra::Base
 
   post '/birthday' do
     @name = params[:name]
+    @day = params[:day]
     erb :birthday
   end
 
